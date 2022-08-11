@@ -29,12 +29,6 @@
     function goToClicked(e) {
         e.preventDefault();
 
-        var clickedItem = $( this );
-        $( ".nav-item" ).each( function() {
-            $( this ).removeClass( "active" );
-        });
-        clickedItem.addClass( "active" );
-
         partialView = e.currentTarget.dataset.partialview;
         history.pushState(partialView, null, partialView);
         loadPartialView(partialView);
