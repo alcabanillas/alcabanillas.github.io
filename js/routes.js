@@ -38,4 +38,11 @@
   function loadPartialView(partialView) {
     $("#render").load("partials/" + partialView);
   }
+
+  $('.navbar-collapse a').on("click", function () {
+    $(".navbar-collapse").collapse('hide');
+});
+
+
+
 })();
