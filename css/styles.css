@@ -46,11 +46,11 @@ p {
 }
 
 
-bio-video-container{
+/*bio-video-container{
   position: relative;
   overflow: scroll;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) 
 }
 
 bio-video {
@@ -63,3 +63,4 @@ bio-video {
   height: 100%;  
 }
 
+*/
