@@ -15,9 +15,6 @@
       case "2":
         $("#render").load("partials/portfolio.html");
         break;
-      case "3":
-        $("#render").load("partials/contact.html");
-        break;
     }
   } else {
     $("#render").load("partials/home.html");
