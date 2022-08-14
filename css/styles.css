@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  /*font-family: "Montserrat", sans-serif;*/
 }
 
 h1,
@@ -34,7 +34,3 @@ p {
   }
 }
 
-.card {
-  margin-left: 10px;
-  margin-right: 10px;
-}
