@@ -2,7 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  /*font-family: "Montserrat", sans-serif;*/
 }
 
 a {
@@ -16,6 +15,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Montserrat sans-serif';
   font-weight: 800;
 }
 
