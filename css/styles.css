@@ -19,8 +19,17 @@ h6 {
   font-weight: 800;
 }
 
+body {
+  background:  #ffffe6;
+}
+
 p {
     font-family: 'Verdana', sans-serif;
+}
+
+
+.card {
+  background:  #ffffe6;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
