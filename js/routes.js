@@ -13,7 +13,7 @@
         $("#render").load("partials/about.html");
         break;
       case "2":
-        $("#render").load("partials/skills.html");
+        $("#render").load("partials/resume.html");
         break;
       case "3":
         $("#render").load("partials/portfolio.html");
