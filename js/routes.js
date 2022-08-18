@@ -1,4 +1,7 @@
 (function () {
+
+
+
   var queryString;
 
   if (window.location.search != "") {
@@ -38,8 +41,7 @@
 
   $('.navbar-collapse a').on("click", function () {
     $(".navbar-collapse").collapse('hide');
-});
-
+  });
 
 
 })();
