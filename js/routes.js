@@ -1,7 +1,4 @@
 (function () {
-
-
-
   var queryString;
 
   if (window.location.search != "") {

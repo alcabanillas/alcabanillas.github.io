@@ -20,28 +20,40 @@ h6 {
 }
 
 body {
-  background:  #ffffe6;
+  background: #ffffe6;
 }
 
 p {
-    font-family: 'Verdana', sans-serif;
+  font-family: 'Verdana', sans-serif;
 }
 
 
 .card {
-  background:  #ffffe6;
+  background: #ffffe6;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
   background-color: #F05742 !important;
 }
 
+.navbar {
+  background-color: #ffffe6;
+}
+
+/*.nav-link {
+  font-weight: 600;
+  color: #000;
+}*/
 
 .nav-link:hover {
   font-weight: 600;
-  color: #F05742;  
+  color: #F05742;
   /*border-bottom: 2px solid;*/
 }
+
 
 .navbar-brand img {
   height: 30px;
