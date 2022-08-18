@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  color: #C6C6C6;
+}
+
 a {
   text-decoration: none;
   color: #F05742;
@@ -19,18 +23,11 @@ h6 {
   font-weight: 800;
 }
 
-body {
-  background: #ffffe6;
-}
-
 p {
   font-family: 'Verdana', sans-serif;
 }
 
 
-.card {
-  background: #ffffe6;
-}
 
 .btn-primary,
 .btn-primary:hover,
@@ -39,14 +36,12 @@ p {
   background-color: #F05742 !important;
 }
 
-.navbar {
-  background-color: #ffffe6;
-}
 
-/*.nav-link {
+
+.nav-link {
   font-weight: 600;
-  color: #000;
-}*/
+  color: #ddd;
+}
 
 .nav-link:hover {
   font-weight: 600;
@@ -83,7 +78,6 @@ p {
   display: block;
   font-weight: 600;
   font-family: "Verdana", sans-serif;
-  color: #02172c;
 }
 
 .skills .progress .skill .val {
@@ -122,7 +116,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: #C6C6C6;
 }
 
 .section-title h2::before {

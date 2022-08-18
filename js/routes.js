@@ -13,7 +13,13 @@
         $("#render").load("partials/about.html");
         break;
       case "2":
+        $("#render").load("partials/skills.html");
+        break;
+      case "3":
         $("#render").load("partials/portfolio.html");
+        break;
+      case "4":
+        $("#render").load("partials/contact.html");
         break;
     }
   } else {
@@ -36,9 +42,7 @@
     $("#render").load("partials/" + partialView);
   }
 
-  $('.navbar-collapse a').on("click", function () {
-    $(".navbar-collapse").collapse('hide');
+  $(".navbar-collapse a").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
   });
-
-
 })();
