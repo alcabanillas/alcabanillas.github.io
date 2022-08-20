@@ -36,6 +36,7 @@
     history.pushState(partialView, null, partialView);
     loadPartialView(partialView);
     e.stopPropagation();
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
   function loadPartialView(partialView) {
