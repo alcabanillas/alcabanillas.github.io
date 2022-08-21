@@ -60,19 +60,26 @@
     el.addEventListener("scroll", listener);
   };
 
+  /**
+   * change active link when clicked
+   */
+  $(".navbar").on("click", "a", function () {
+    $(".navbar a.active").removeClass("active");
+    $(this).addClass("active");
+  });
 
-  
   /**
    * Load partial view depending on click
    */
-  
+
   function goToClicked(e) {
+    console.log("gotoClicked");
     e.preventDefault();
 
     partialView = e.currentTarget.dataset.partialview;
     history.pushState(partialView, null, partialView);
     loadPartialView(partialView);
-    e.stopPropagation();
+    //e.stopPropagation();
     document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
   on('click', '.goTo', goToClicked, true);
@@ -103,6 +110,4 @@
     window.addEventListener("load", toggleBacktotop);
     onscroll(document, toggleBacktotop);
   }
-
-
 })();

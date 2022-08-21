@@ -18,21 +18,9 @@ a {
   color: #F05742;
 }
 
-/*h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-}*/
-
 p {
   font-family: 'Verdana', sans-serif;
 }
-
-
 
 .btn-primary,
 .btn-primary:hover,
@@ -47,19 +35,18 @@ p {
 # Navbar
 --------------------------------------------------------------*/
 
+
 .nav-link {
   font-weight: 600;
-  color: #ddd;
 }
 
 .nav-link:hover {
   font-weight: 600;
   color: #F05742;
-  /*border-bottom: 2px solid;*/
 }
 
-.nav-link:active {
-  color: #F05742;
+.navbar .active {
+  color: #F05742 !important;
 }
 
 
@@ -166,7 +153,6 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  /*color: #45505b;*/
 }
 
 .resume .resume-item {
