@@ -2,30 +2,21 @@
   /* Redirect depending on the partial file being loaded */
   var queryString;
 
+  const partials = ['home.html', 'about.html', 'resume.html', 'portfolio.html', 'contact.html'];
+
+  let partial;
+
   if (window.location.search != "") {
     queryString = new window.URLSearchParams(window.location.search);
-    console.log(queryString);
-
-    switch (queryString.get("d")) {
-      case "0":
-        $("#render").load("partials/home.html");
-        break;
-      case "1":
-        $("#render").load("partials/about.html");
-        break;
-      case "2":
-        $("#render").load("partials/resume.html");
-        break;
-      case "3":
-        $("#render").load("partials/portfolio.html");
-        break;
-      case "4":
-        $("#render").load("partials/contact.html");
-        break;
-    }
-  } else {
-    $("#render").load("partials/home.html");
+    partial = partials[queryString.get("d")];
   }
+
+  partial = partial || partials[0];
+
+  $("#render").load(`partials/${partial}`);
+
+  $(".navbar a.active").removeClass("active");
+  $(`.navbar a[data-partialview='${partial}']`).addClass("active");
 
   /**
    * Easy selector helper function
@@ -73,7 +64,6 @@
    */
 
   function goToClicked(e) {
-    console.log("gotoClicked");
     e.preventDefault();
 
     partialView = e.currentTarget.dataset.partialview;
